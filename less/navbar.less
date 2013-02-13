@@ -48,10 +48,9 @@
 // -------------------------
 .navbar .brand {
   float: left;
-  display: block;
+  display: inline-block;
   // Vertically center the text given @navbarHeight
-  padding: ((@navbarHeight - @baseLineHeight) / 2) 20px ((@navbarHeight - @baseLineHeight) / 2);
-  margin-left: -20px; // negative indent to left-align the text down the page
+  padding: ((@navbarHeight - @baseLineHeight) / 2) 0 ((@navbarHeight - @baseLineHeight) / 2);
   font-size: 20px;
   font-weight: 200;
   color: @navbarBrandColor;
@@ -405,10 +404,10 @@
     color: @navbarInverseBrandColor;
   }
   .uni-name {
+    display: inline-block;
     color: @navbarInverseBrandColor;
     font-size: 14px;
-    padding: 12px 20px 8px 0;
-    margin-left: -15px;
+    padding: 12px 20px 8px 5px;
     &:hover {
       color: white;
     }

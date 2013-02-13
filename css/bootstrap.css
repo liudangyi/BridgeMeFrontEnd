@@ -3659,9 +3659,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .brand {
   float: left;
-  display: block;
-  padding: 10px 20px 10px;
-  margin-left: -20px;
+  display: inline-block;
+  padding: 10px 0 10px;
   font-size: 20px;
   font-weight: 200;
   color: #777777;
@@ -4000,10 +3999,10 @@ input[type="submit"].btn.btn-mini {
   color: #eeeeee;
 }
 .navbar-inverse .uni-name {
+  display: inline-block;
   color: #eeeeee;
   font-size: 14px;
-  padding: 12px 20px 8px 0;
-  margin-left: -15px;
+  padding: 12px 20px 8px 5px;
 }
 .navbar-inverse .uni-name:hover {
   color: white;
