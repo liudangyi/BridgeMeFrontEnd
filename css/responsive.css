@@ -818,6 +818,10 @@
   .modal.fade.in {
     top: 20px;
   }
+  .carousel-caption {
+    position: static;
+    width: 89%;
+  }
 }
 @media (max-width: 480px) {
   .nav-collapse {
@@ -866,8 +870,8 @@
     padding: 10px;
     margin: -10px;
   }
-  .carousel-caption {
-    position: static;
+  .carousel {
+    display: none;
   }
 }
 @media (max-width: 979px) {

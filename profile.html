@@ -34,11 +34,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#" style="color: #fff;">BridgeMe</a>
-          <a class="brand uni-name" href="#ChangeSchool">(Miaomi University Ohio)<!-- or '(Choose your school)' --></a>
+          <a class="brand" href="index-logged.html" style="color: #fff;">BridgeMe</a>
+          <span class="dropdown pull-left">
+            <a class="uni-name dropdown-toggle" data-toggle="dropdown" href="#">(Miaomi University Ohio)</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="disabled"><a tabindex="-1" href="#school1">Miaomi University Ohio</a></li>
+              <li><a tabindex="-1" href="#school2">School 2</a></li>
+              <li><a tabindex="-1" href="#school3">School 3</a></li>
+            </ul>
+          </span>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="#search">Search</a></li>
+              <li><a href="search.html">Search</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Hangouts
@@ -53,10 +60,10 @@
             </ul>
             <ul class="nav pull-right">
               <li>
-                <a href="#profile" style="color: #FFF; padding-right: 5px;"><b>Welcome, Raymond Dong!</b></a>
+                <a href="profile.html" style="color: #FFF; padding-right: 5px;"><b>Welcome, Raymond Dong!</b></a>
               </li>
               <li>
-                <a href="#logout" style="padding-left: 5px">(log out)</a>
+                <a href="index.html" style="padding-left: 5px">(log out)</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -67,38 +74,9 @@
     <div class="container">
 
         
-      <!-- {% block content %} -->
-      <h1>This is the basic layout</h1>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <div class="well">
-        Words in the well.
-      </div>
-      <div class="well">
-        <div class="row-fluid">
-          <div class="span4">
-            span4
-          </div>
-          <div class="span8">
-            span8
-          </div>
-        </div>
-      </div>
-      <!-- {% endblock %} -->
+    <!-- {% block content %} -->
+
+    <!-- {% endblock %} -->
 
 
     </div> <!-- /container -->
@@ -139,6 +117,8 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
+    <script type="text/javascript">$('.carousel').carousel();</script>
 
     <!-- for LiveReload -->
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

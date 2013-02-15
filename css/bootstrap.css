@@ -1686,6 +1686,25 @@ legend + .control-group {
 .form-horizontal .form-actions {
   padding-left: 180px;
 }
+.form-signin input[type="email"].input-block-level,
+.form-signin input[type="password"].input-block-level {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+.form-alone {
+  width: 470px;
+  margin: 0 auto;
+  padding: 50px 30px 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
 table {
   max-width: 100%;
   background-color: transparent;
@@ -5187,5 +5206,5 @@ a.badge:hover {
   height: 100%;
   border-radius: 4px;
   background-color: #999;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.6);
 }
