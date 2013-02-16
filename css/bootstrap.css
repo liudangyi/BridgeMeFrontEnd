@@ -581,6 +581,13 @@ a.muted:hover,
 a.muted:focus {
   color: #080808;
 }
+.gray {
+  color: #555555;
+}
+a.gray:hover,
+a.gray:focus {
+  color: #2f2f2f;
+}
 .text-warning {
   color: #c09853;
 }

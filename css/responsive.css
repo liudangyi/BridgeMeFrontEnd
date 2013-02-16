@@ -873,6 +873,9 @@
   .carousel {
     display: none;
   }
+  .form-alone {
+    width: auto;
+  }
 }
 @media (max-width: 979px) {
   body {
