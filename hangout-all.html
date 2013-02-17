@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BridgeMe | All Hangouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url(img/uchicago.jpg);    /* change this to your own school's photo */
+      }
+    </style>
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index-logged.html" style="color: #fff;">BridgeMe</a>
+          <span class="dropdown pull-left">
+            <a class="uni-name dropdown-toggle" data-toggle="dropdown" href="#">(Miaomi University Ohio)</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="disabled"><a tabindex="-1" href="#school1">Miaomi University Ohio</a></li>
+              <li><a tabindex="-1" href="#school2">School 2</a></li>
+              <li><a tabindex="-1" href="#school3">School 3</a></li>
+            </ul>
+          </span>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="search.html">Search</a></li>
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Hangouts
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="active"><a tabindex="-1" href="hangout-all.html">All Hangouts</a></li>
+                  <li><a tabindex="-1" href="hangout.html">My Hangouts</a></li>
+                  <li><a tabindex="-1" href="hangout-create.html">Create a hangout</a></li>
+                </ul>
+              </li>
+              <li><a href="#wiki">Wiki</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li>
+                <a href="profile.html" style="color: #FFF; padding-right: 5px;"><b>Welcome, Raymond Dong!</b></a>
+              </li>
+              <li>
+                <a href="index.html" style="padding-left: 5px">(log out)</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+        
+    <!-- {% block content %} -->
+      <div class="block" style="padding: 20px;">
+        <div class="row-fluid">
+          <div class="span9">
+            <div class="block clearfix">
+              <div class="row-fluid">
+                <form class="form-search span8">
+                  <button type="submit" class="btn pull-right">Search</button>
+                  <div style="margin-right: 95px;">
+                    <input name="query" type="text" style="width: 100%">
+                  </div>
+                </form>
+                <div class="span4" style="line-height: 29px;">
+                  <div class="pull-right">
+                    Sort by
+                    <div class="btn-group">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                        Most Recent
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="disabled"><a href="###">Most Recent</a></li>
+                        <li><a href="###">Name</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br style="clear: both;">
+
+              <ul class="unstyled">
+                <li class="clearfix">
+                  <img class="pull-left" data-src="holder.js/200x200">
+                  <div style="margin-left: 220px;">
+                    <a href="hangout-show.html" class="muted">
+                      <h5><b>Shopping</b></h5>
+                    </a>
+                    <p>
+                      Location: Whenever people in Oxford shop <br>
+                      When: 1/13/2013 <br>
+                      Group Size: 20 (3 open spaces) <br>
+                      Restrictions: none <br>
+                    </p>
+                    <p style="padding-left: 30px; text-indent: -30px;">
+                      Interest Tags:
+                      <a href="###">shopping</a>, 
+                      <a href="###">sightseeing</a>, 
+                      <a href="###">cities</a>, 
+                      <a href="###">photography</a>
+                    </p>
+                  </div>
+                </li>
+                <hr>
+                <li class="clearfix">
+                  <img class="pull-left" data-src="holder.js/200x200">
+                  <div style="margin-left: 220px;">
+                    <a href="hangout-show.html" class="muted">
+                      <h5><b>League of Legends</b></h5>
+                    </a>
+                    <p>
+                      Location: Elliot Hall 203<br>
+                      When: 1/13/2013 8:00 pm<br>
+                      Group Size: 5<br>
+                      Restrictions: none <br>
+                    </p>
+                    <p style="padding-left: 30px; text-indent: -30px;">
+                      Interest Tags:
+                      <a href="###">Video Games</a>, 
+                      <a href="###">LoL</a>, 
+                      <a href="###">League of Legends</a>, 
+                      <a href="###">Computers</a>, 
+                      <a href="###">Technology</a>, 
+                      <a href="###">Gaming</a>
+                    </p>
+                  </div>
+                </li>
+                <hr>
+                <li class="clearfix">
+                  <img class="pull-left" data-src="holder.js/200x200">
+                  <div style="margin-left: 220px;">
+                    <a href="hangout-show.html" class="muted">
+                      <h5><b>League of Legends</b></h5>
+                    </a>
+                    <p>
+                      Location: Elliot Hall 203<br>
+                      When: 1/13/2013 8:00 pm<br>
+                      Group Size: 5<br>
+                      Restrictions: none <br>
+                    </p>
+                    <p style="padding-left: 30px; text-indent: -30px;">
+                      Interest Tags:
+                      <a href="###">Video Games</a>, 
+                      <a href="###">LoL</a>, 
+                      <a href="###">League of Legends</a>, 
+                      <a href="###">Computers</a>, 
+                      <a href="###">Technology</a>, 
+                      <a href="###">Gaming</a>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="block" style="padding: 20px;">
+              <h4 style="color: DarkBlue;">Search by tag:</h4>
+              <form style="margin-bottom: 0px">
+                <input name="filter" type="text" class="span12">
+                <input type="submit" class="btn" style="position: absolute; top: -9999px;">
+                <!-- use Enter to search -->
+              </form>
+              <h5>Most popular tags:</h5>
+              <div style="margin-left: 20px">
+                <div><a href="###">Shopping</a></div>
+                <div><a href="###">Basketball</a></div>
+                <div><a href="###">Soccer</a></div>
+                <div><a href="###">CoD</a></div>
+                <div><a href="###">Gaming</a></div>
+                <div><a href="###">Boxing</a></div>
+              </div>
+              <br>
+              <h4 style="color: DarkBlue;">Search by Category:</h4>
+              <div>
+                <div><a href="###">Sports</a></div>
+                <div style="margin-left: 20px">
+                  <div><a href="###">Basketball</a></div>
+                  <div><a href="###">Soccer</a></div>
+                  <div><a href="###">Baseball</a></div>
+                  <div><a href="###">Boxing</a></div>
+                </div>
+                <div><a href="###">Gaming</a></div>
+                <div style="margin-left: 20px">
+                  <div><a href="###">LoL</a></div>
+                  <div><a href="###">CoD</a></div>
+                  <div><a href="###">FIFA '12</a></div>
+                  <div><a href="###">Starcraft</a></div>
+                </div>
+                <div><a href="###">Academic</a></div>
+                <div><a href="###">Downtown</a></div>
+              </div>
+
+            </div>
+          </div>  
+        </div>
+
+      </div>
+    <!-- {% endblock %} -->
+
+
+    </div> <!-- /container -->
+
+    <div class="footer">
+      <div class="container">
+        <div style="text-align: center; font-weight: normal; font-size: 20px; line-height: 40px;">BridgeMe</div>
+        <div class="pull-left"  style="position: absolute; left: 0;">
+          <div><a href="about.html" class="muted">About</a></div>
+          <div><a href="about.html#help" class="muted">Help</a></div>
+          <div><a href="about.html#contact" class="muted">Contact</a></div>
+          <div><a href="about.html#terms" class="muted">Terms</a></div>
+        </div>
+        <div class="pull-right"  style="position: absolute; right: 0;">
+          <div><a href="#" class="muted">Cookies</a></div>
+          <div><a href="#" class="muted">Advertise</a></div>
+          <div><a href="#" class="muted">Join</a></div>
+        </div>
+        <div style="text-align: center;">
+          English (US)
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
+
+    <!-- for LiveReload -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  </body>
+</html>

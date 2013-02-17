@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>BridgeMe | Home</title>
+    <title>BridgeMe | My Hangouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -46,14 +46,14 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="search.html">Search</a></li>
-              <li class="dropdown">
+              <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Hangouts
                   <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a tabindex="-1" href="hangout-all.html">All Hangouts</a></li>
-                  <li><a tabindex="-1" href="hangout.html">My Hangouts</a></li>
+                  <li class="active"><a tabindex="-1" href="hangout.html">My Hangouts</a></li>
                   <li><a tabindex="-1" href="hangout-create.html">Create a hangout</a></li>
                 </ul>
               </li>
@@ -76,79 +76,102 @@
 
         
     <!-- {% block content %} -->
-
-
-      <div id="myCarousel" class="carousel slide">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Carousel items -->
-        <div class="carousel-inner">
-          <div class="active item">
-            <img src="img/carousel/pic2.jpg" alt="">
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. (Change the words yourself)</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/carousel/pic1.jpg" alt="">
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. (Change the words yourself)</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/carousel/pic3.jpg" alt="">
-            <div class="carousel-caption">
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. (Change the words yourself)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h1 style="text-align: center; font-size: 5em; font-weight: normal; color: white; text-shadow: 0 0 5px black; line-height: 1.5; font-family: serif;">Miaomi University Ohio</h1>
-
-      <div class="block" style="padding-bottom: 30px;">
-        <h3 class="text-center">Newest Hangout</h3>
-        <ul class="unstyled">
-          <li><a href="#">Hangout 1</a></li>
-          <li><a href="#">Hangout 1</a></li>
-          <li><a href="#">Hangout 1</a></li>
-          <li><a href="#">Hangout 1</a></li>
-          <li><a href="#">Hangout 1</a></li>
-          <li><a href="#">Hangout 1</a></li>
-        </ul>
-      </div>
-
-      <hr>
       <div class="block">
-        <h3 class="text-center">Featured Mentor</h3>
-        <ul class="thumbnails">
-          <li class="span2">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/130x130" alt="">
-            </a>
+        <h3>My pending hangouts:</h3>
+        <ul class="unstyled">
+          <li class="clearfix">
+            <img class="pull-left" data-src="holder.js/200x200">
+            <div style="margin-left: 220px;">
+              <a href="hangout-show.html" class="muted">
+                <h5><b>Shopping</b></h5>
+              </a>
+              <p>
+                Location: Whenever people in Oxford shop <br>
+                When: 1/13/2013 <br>
+                Group Size: 20 (3 open spaces) <br>
+                Restrictions: none <br>
+              </p>
+              <p style="padding-left: 30px; text-indent: -30px;">
+                Interest Tags:
+                <a href="###">shopping</a>, 
+                <a href="###">sightseeing</a>, 
+                <a href="###">cities</a>, 
+                <a href="###">photography</a>
+              </p>
+            </div>
           </li>
-          <li class="span2">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/130x130" alt="">
-            </a>
+          <br>
+          <li class="clearfix">
+            <img class="pull-left" data-src="holder.js/200x200">
+            <div style="margin-left: 220px;">
+              <a href="hangout-show.html" class="muted">
+                <h5><b>League of Legends</b></h5>
+              </a>
+              <p>
+                Location: Elliot Hall 203<br>
+                When: 1/13/2013 8:00 pm<br>
+                Group Size: 5<br>
+                Restrictions: none <br>
+              </p>
+              <p style="padding-left: 30px; text-indent: -30px;">
+                Interest Tags:
+                <a href="###">Video Games</a>, 
+                <a href="###">LoL</a>, 
+                <a href="###">League of Legends</a>, 
+                <a href="###">Computers</a>, 
+                <a href="###">Technology</a>, 
+                <a href="###">Gaming</a>
+              </p>
+            </div>
           </li>
-          <li class="span2">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/130x130" alt="">
-            </a>
+        </ul>
+        <hr>
+        <h3>Hangouts I'm going to:</h3> 
+        <ul class="unstyled">
+          <li class="clearfix">
+            <img class="pull-left" data-src="holder.js/200x200">
+            <div style="margin-left: 220px;">
+              <a href="hangout-show.html" class="muted">
+                <h5><b>Shopping</b></h5>
+              </a>
+              <p>
+                Location: Whenever people in Oxford shop <br>
+                When: 1/13/2013 <br>
+                Group Size: 20 (3 open spaces) <br>
+                Restrictions: none <br>
+              </p>
+              <p style="padding-left: 30px; text-indent: -30px;">
+                Interest Tags:
+                <a href="###">shopping</a>, 
+                <a href="###">sightseeing</a>, 
+                <a href="###">cities</a>, 
+                <a href="###">photography</a>
+              </p>
+            </div>
           </li>
-          <li class="span2">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/130x130" alt="">
-            </a>
-          </li>
-          <li class="span2">
-            <a href="#" class="thumbnail">
-              <img data-src="holder.js/130x130" alt="">
-            </a>
+          <br>
+          <li class="clearfix">
+            <img class="pull-left" data-src="holder.js/200x200">
+            <div style="margin-left: 220px;">
+              <a href="hangout-show.html" class="muted">
+                <h5><b>League of Legends</b></h5>
+              </a>
+              <p>
+                Location: Elliot Hall 203<br>
+                When: 1/13/2013 8:00 pm<br>
+                Group Size: 5<br>
+                Restrictions: none <br>
+              </p>
+              <p style="padding-left: 30px; text-indent: -30px;">
+                Interest Tags:
+                <a href="###">Video Games</a>, 
+                <a href="###">LoL</a>, 
+                <a href="###">League of Legends</a>, 
+                <a href="###">Computers</a>, 
+                <a href="###">Technology</a>, 
+                <a href="###">Gaming</a>
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -194,7 +217,6 @@
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
     <script src="js/holder.js"></script>
-    <script type="text/javascript">$('.carousel').carousel();</script>
 
     <!-- for LiveReload -->
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

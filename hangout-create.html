@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>BridgeMe | Home</title>
+    <title>BridgeMe | Create a Hangout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -34,12 +34,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#" style="color: #fff;">BridgeMe</a>
-          <a class="brand uni-name" href="#ChangeSchool">(Miaomi University Ohio)<!-- or '(Choose your school)' --></a>
+          <a class="brand" href="index-logged.html" style="color: #fff;">BridgeMe</a>
+          <span class="dropdown pull-left">
+            <a class="uni-name dropdown-toggle" data-toggle="dropdown" href="#">(Miaomi University Ohio)</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="disabled"><a tabindex="-1" href="#school1">Miaomi University Ohio</a></li>
+              <li><a tabindex="-1" href="#school2">School 2</a></li>
+              <li><a tabindex="-1" href="#school3">School 3</a></li>
+            </ul>
+          </span>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="#search">Search</a></li>
-              <li class="dropdown">
+              <li><a href="search.html">Search</a></li>
+              <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   Hangouts
                   <b class="caret"></b>
@@ -47,17 +54,17 @@
                 <ul class="dropdown-menu">
                   <li><a tabindex="-1" href="hangout-all.html">All Hangouts</a></li>
                   <li><a tabindex="-1" href="hangout.html">My Hangouts</a></li>
-                  <li><a tabindex="-1" href="hangout-create.html">Create a hangout</a></li>
+                  <li class="active"><a tabindex="-1" href="hangout-create.html">Create a hangout</a></li>
                 </ul>
               </li>
               <li><a href="#wiki">Wiki</a></li>
             </ul>
             <ul class="nav pull-right">
               <li>
-                <a href="#profile" style="color: #FFF; padding-right: 5px;"><b>Welcome, Raymond Dong!</b></a>
+                <a href="profile.html" style="color: #FFF; padding-right: 5px;"><b>Welcome, Raymond Dong!</b></a>
               </li>
               <li>
-                <a href="#logout" style="padding-left: 5px">(log out)</a>
+                <a href="index.html" style="padding-left: 5px">(log out)</a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -68,38 +75,46 @@
     <div class="container">
 
         
-      <!-- {% block content %} -->
-      <h1>This is the basic layout</h1>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <p>Some words. Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</p>
-      <div class="well">
-        Words in the well.
-      </div>
-      <div class="well">
-        <div class="row-fluid">
-          <div class="span4">
-            span4
+    <!-- {% block content %} -->
+      <form class="form-horizontal form-alone">
+          <!-- <div class="alert">You should only use .edu mail</div> -->
+          <div class="control-group">
+            <label class="control-label" for="inputName">Name</label>
+            <div class="controls">
+              <input type="text" id="inputName" placeholder="Name">
+            </div>
           </div>
-          <div class="span8">
-            span8
+          <div class="control-group">
+            <label class="control-label" for="inputDate">Date</label>
+            <div class="controls">
+              <input type="text" id="inputDate" placeholder="Date">
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- {% endblock %} -->
+          <div class="control-group">
+            <label class="control-label" for="inputLocation">Location</label>
+            <div class="controls">
+              <input type="text" id="inputLocation" placeholder="Location">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputDescription">Description</label>
+            <div class="controls">
+              <textarea id="inputDescription" placeholder="Description"></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="inputOthers">Other User</label>
+            <div class="controls">
+              <textarea id="inputOthers" placeholder="Other User (username)"></textarea>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="controls">
+              <button type="submit" class="btn">Create</button>
+            </div>
+          </div>
+        </form>
+    <!-- {% endblock %} -->
 
 
     </div> <!-- /container -->
@@ -140,6 +155,7 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
 
     <!-- for LiveReload -->
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
