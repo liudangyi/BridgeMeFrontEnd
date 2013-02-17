@@ -131,6 +131,7 @@
 .nav-tabs > .active > a:hover {
   color: @gray;
   background-color: @bodyBackground;
+  background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -357,20 +358,21 @@
 
 // Tabs on the right
 .tabs-right > .nav-tabs {
+  margin-top: 20px;
   float: right;
-  margin-left: 19px;
-  border-left: 1px solid #ddd;
 }
 .tabs-right > .nav-tabs > li > a {
-  margin-left: -1px;
   .border-radius(0 4px 4px 0);
+  border-width: 0px;
 }
 .tabs-right > .nav-tabs > li > a:hover {
   border-color: @grayLighter @grayLighter @grayLighter #ddd;
+  border-width: 0px;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover {
   border-color: #ddd #ddd #ddd transparent;
+  border-width: 0px;
   *border-left-color: @white;
 }
 
@@ -388,4 +390,8 @@
   text-decoration: none;
   background-color: transparent;
   cursor: default;
+}
+
+.tab-pane {
+  min-height: 350px;
 }

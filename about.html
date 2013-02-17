@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BridgeMe | Hangout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url(img/uchicago.jpg);    /* change this to your own school's photo */
+      }
+    </style>
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index-logged.html" style="color: #fff;">BridgeMe</a>
+          <span class="dropdown pull-left">
+            <a class="uni-name dropdown-toggle" data-toggle="dropdown" href="#">(Miaomi University Ohio)</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              <li class="disabled"><a tabindex="-1" href="#school1">Miaomi University Ohio</a></li>
+              <li><a tabindex="-1" href="#school2">School 2</a></li>
+              <li><a tabindex="-1" href="#school3">School 3</a></li>
+            </ul>
+          </span>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="search.html">Search</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Hangouts
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="hangout.html">My Hangouts</a></li>
+                  <li><a tabindex="-1" href="hangout-create.html">Create a hangout</a></li>
+                </ul>
+              </li>
+              <li><a href="#wiki">Wiki</a></li>
+            </ul>
+            <ul class="nav pull-right">
+              <li>
+                <a href="profile.html" style="color: #FFF; padding-right: 5px;"><b>Welcome, Raymond Dong!</b></a>
+              </li>
+              <li>
+                <a href="index.html" style="padding-left: 5px">(log out)</a>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+        
+    <!-- {% block content %} -->
+      <div class="tabbable tabs-right">
+        <ul class="nav nav-tabs pull-right">
+          <li class="active"><a href="#about" data-toggle="tab">About</a></li>
+          <li><a href="#help" data-toggle="tab">Help</a></li>
+          <li><a href="#contact" data-toggle="tab">Contact</a></li>
+          <li><a href="#terms" data-toggle="tab">Terms</a></li>
+        </ul>
+        <div class="block tab-content" style="">
+          <div class="tab-pane active" id="about">
+            <h2>About us</h2>
+            <br>
+            <p>During the 2011-2012 academic school year, over 194,029 Chinese international students studied in the US, making China the largest source of study-abroad students of any nation. With yearly increases in undergraduate population, more and more Chinese students are dissatisfied with the degree of US cultural immersion they experience. BridgeMe, a non-profit online platform for exchange between Chinese and American students, targets this cultural immersion problem. We aim to establish BridgeMe chapters at target institutions and work with the on-site leaders to offer three free services - hangouts, collaborative wiki’s and school-specific events - for our users. Many international Chinese students want to meet more American students, but blame their inability to do so on shyness, poor English, cultural insensitivity of American students, and pre-formed social cliques. BridgeMe provides group Hangouts to counter the shyness factor and acquires American users from a select pool with Asian interest to minimize potential for cultural insensitivity. To address pre-formed cliques found via Chinese social media (RenRen or Weibo), BridgeMe will encourage American students residing in China to initiate hangouts for Chinese students before they arrive on campus. To supplement hangouts, after a college decision is made Chinese students can learn crucial college tips firsthand from other students through collaborative wiki’s. BridgeMe hopes to utilize a first-mover advantage by drawing upon social media networks and an online interface to systematically bridge the cultural gap between Chinese and American students. The team draws from experience working together with a separate start-up, as well as individualized specializations in a plethora of business organizations, to make a social impact by facilitating vital relationships contributing to a global society.
+
+            </p>
+          </div>
+          <div class="tab-pane" id="help">
+            <h2>FAQ</h2>
+            <br>
+            <h5 class="bold">Question: What is BridgeMe? </h5>
+            <p>Answer: BridgeMe is a non-profit, online platform for cultural exchange between Chinese international students and select American students interested in Chinese culture or studying abroad in China. Registered users will be matched with other students at their respective schools who share complementary interests to form sustainable online and face-to-face interactions.</p>
+            <br>
+            <h5 class="bold">Question: What services does BridgeMe offer? </h5>
+            <p>Answer: 
+              <ol>
+                <li>Hangouts: Hangouts mark a key aspect of the website, and will act to facilitate real life meet- ups. Each individual student profile will have an “invite to Hangout” button located on his or her profile. The first “invite” has to be between the two opposing parties, American and Chinese, to encourage cross-cultural interaction, but afterwards either the original host or the opposing invitee can invite more students of both parties. Each Hangout will have a forum where participants can discuss the location, event, etc. of the Hangout. Every Hangout will be assigned one of three statuses, namely, “Active,” “Inactive,” and “Pending.” After one party sends an invite, which will include basic event information, the event is “pending” until the other party accepts the Hangout, after which the Hangout is considered “active.” Declined Hangouts or finished Hangouts are labeled “inactive.”</li>
+                <li>Collaborative Wiki’s: This function will be for older students to share general tips for their younger counterparts. The collaborative wiki will contain subsections for different life topics (classes to take, places to eat, events to attend, etc.) and anybody will be able to make edits. However, on-site BridgeMe leaders or the Executive Team will review all edits to assess their accuracy and usefulness before they appear on the site. This service will serve as a means for accepted international students to read up on specific topics concerning their university before or after arrival on campus.</li>
+                <li>On-Site Events: BridgeMe’s executive team will work closely with each partner university’s BridgeMe team to host events for the university’s users. They will initially consist of small-scale mixer events with free food for students, and will be funded by the on-site team’s application to their university or student government for money. In the future, through on-site fundraisers and potential grants (after non-profit approval), we hope to plan large-scale trips and dinners for other types of integration opportunities. These on-site events will possess a special presence on the pertinent university’s site to draw the maximum number of participants possible.</li>
+              </ol>
+            </p>
+            <br>
+            <h5 class="bold">Question: How are current college students verified? </h5>
+            <p>Answer: To create an account on BridgeMe, college students must register with a valid .edu email issued by their school. Once registered, college students may begin creating content. He or she will then be able to use all of the site’s free services.</p>
+          </div>
+          <div class="tab-pane" id="contact">
+            <h3>Contact</h3>
+            <br>
+            <p>Idk just send an email or something.</p>
+          </div>
+          <div class="tab-pane" id="terms">
+            <h3>Terms</h3>
+            <br>
+            <p>Something</p>
+          </div>
+        </div>
+      </div>
+    <!-- {% endblock %} -->
+
+
+    </div> <!-- /container -->
+
+    <div class="footer">
+      <div class="container">
+        <div style="text-align: center; font-weight: normal; font-size: 20px; line-height: 40px;">BridgeMe</div>
+        <div class="pull-left"  style="position: absolute; left: 0;">
+          <div><a href="about.html" class="muted">About</a></div>
+          <div><a href="about.html#help" class="muted">Help</a></div>
+          <div><a href="about.html#contact" class="muted">Contact</a></div>
+          <div><a href="about.html#terms" class="muted">Terms</a></div>
+        </div>
+        <div class="pull-right"  style="position: absolute; right: 0;">
+          <div><a href="#" class="muted">Cookies</a></div>
+          <div><a href="#" class="muted">Advertise</a></div>
+          <div><a href="#" class="muted">Join</a></div>
+        </div>
+        <div style="text-align: center;">
+          English (US)
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/holder.js"></script>
+    <script type="text/javascript">
+      if (location.hash!="") {
+        $('.nav-tabs a[href='+location.hash+']').tab('show');
+      };
+    </script>
+
+    <!-- for LiveReload -->
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  </body>
+</html>

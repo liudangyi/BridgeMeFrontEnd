@@ -625,6 +625,9 @@ a.text-success:focus {
 .text-center {
   text-align: center;
 }
+.bold {
+  font-weight: bold;
+}
 h1,
 h2,
 h3,
@@ -3443,6 +3446,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a:hover {
   color: #555555;
   background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.6);
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3632,22 +3636,23 @@ input[type="submit"].btn.btn-mini {
   *border-right-color: #ffffff;
 }
 .tabs-right > .nav-tabs {
+  margin-top: 20px;
   float: right;
-  margin-left: 19px;
-  border-left: 1px solid #ddd;
 }
 .tabs-right > .nav-tabs > li > a {
-  margin-left: -1px;
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
+  border-width: 0px;
 }
 .tabs-right > .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+  border-width: 0px;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover {
   border-color: #ddd #ddd #ddd transparent;
+  border-width: 0px;
   *border-left-color: #ffffff;
 }
 .nav > .disabled > a {
@@ -3657,6 +3662,9 @@ input[type="submit"].btn.btn-mini {
   text-decoration: none;
   background-color: transparent;
   cursor: default;
+}
+.tab-pane {
+  min-height: 350px;
 }
 .navbar {
   overflow: visible;
